@@ -1,6 +1,6 @@
-import CounterButtonsGroup from '../components/CounterButtonsGroup'
-import IndependentCounterButtons from '../components/IndependentCounterButtons'
 import DependentCounterButtons from '../components/DependentCounterButtons'
+import IndependentCounterButtons from '../components/IndependentCounterButtons'
+import TextField from '../components/TextField'
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <h1>Next JS Playground with JS</h1>
       <IndependentCounterButtons />
       <DependentCounterButtons />
+      <TextField />
     </main>
   )
 }
