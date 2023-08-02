@@ -5,7 +5,7 @@ export default function CounterButton({ clicks, onClick }) {
     const [selfClicks, setSelfClicks] = useState(0);
 
     const increaseSelfCounter = () => {
-        setSelfClicks(selfClicks => selfClicks + 1)
+        setSelfClicks(prevClicks => prevClicks + 1)
     }
 
     return (
