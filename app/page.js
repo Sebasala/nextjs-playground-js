@@ -1,6 +1,7 @@
 import CheckboxCombo from '../components/CheckboxCombo'
 import DependentCounterButtons from '../components/DependentCounterButtons'
 import IndependentCounterButtons from '../components/IndependentCounterButtons'
+import ReducerCounterContainer from '../components/ReducerCounterContainer'
 import TextField from '../components/TextField'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <DependentCounterButtons />
       <TextField />
       <CheckboxCombo />
+      <ReducerCounterContainer />
     </main>
   )
 }
