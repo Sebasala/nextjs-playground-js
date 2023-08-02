@@ -6,7 +6,7 @@ export default function CounterButtonsGroup() {
     const [clicks, setClicks] = useState(0)
 
     const increaseCounter = () => {
-        setClicks(clicks => clicks + 1)
+        setClicks(prevClicks => prevClicks + 1)
     }
 
     return (
