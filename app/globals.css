@@ -13,7 +13,8 @@ ul {
 
 button {
   cursor: pointer;
-  padding: .5rem 1rem;
+  border: 0;
+  padding: 0;
 }
 
 li {

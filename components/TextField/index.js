@@ -1,5 +1,6 @@
 'use client'
 import {useState} from 'react'
+import Button from '@/components/Button'
 
 export default function TextField() {
     const [text, setText] = useState('hello')
@@ -17,7 +18,7 @@ export default function TextField() {
             <h2>Text field example</h2>
             <input value={text} onChange={updateText} type="text" />
             <p>You typed: {text}</p>
-            <button onClick={resetText}>Reset</button>
+            <Button onClick={resetText} label='Reset' />
         </section>
     )
 }

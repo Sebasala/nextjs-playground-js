@@ -11,14 +11,14 @@ export const metadata = {
 
 const HooksExamples = () => {
     return (
-        <div>
+        <main>
             <h1>React Hooks Examples</h1>
             <IndependentCounterButtons />
             <DependentCounterButtons />
             <TextField />
             <CheckboxCombo />
             <ReducerCounterContainer />
-        </div>
+        </main>
     )
 }
 export default HooksExamples
