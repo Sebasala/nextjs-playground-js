@@ -1,9 +1,22 @@
+'use client'
+import useUsers from '@/hooks/useUsers'
+import Image from 'next/image'
+import UserThumbnail from '@/components/UserThumbnail'
+
 const Users = () => {
+    const users = useUsers()
+
+    const usersMarkup = users.map(user => {
+        return (
+            <UserThumbnail user={user} key={user.id} />
+        )
+    })
+
     return (
-        <div>
+        <main>
             <h1>Users</h1>
-            <p>Users page</p>
-        </div>
+            <ul>{usersMarkup}</ul>
+        </main>
     )
 }
 

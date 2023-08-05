@@ -5,7 +5,7 @@ export const pages = [
         path: '/hooks-examples' 
     },
     { 
-        id: 0,
+        id: 1,
         name: 'Users', 
         path: '/users' 
     },
