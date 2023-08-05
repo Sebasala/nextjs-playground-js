@@ -1,8 +1,21 @@
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem;
+h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem;
+}
+
+h1, section {
+  margin: 0 0 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 button {
   cursor: pointer;
   padding: .5rem 1rem;
+}
+
+li {
+  list-style: none;
 }
