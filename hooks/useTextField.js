@@ -1,19 +1,19 @@
-import {useState} from 'react'
+import { useState } from "react";
 
 export default function useTextField() {
-    const [text, setText] = useState('hello')
+  const [text, setText] = useState("hello");
 
-    const updateText = (event) => {
-        setText(event.target.value)
-    }
+  const updateText = (event) => {
+    setText(event.target.value);
+  };
 
-    const resetText = () => {
-        setText('hello')
-    }
+  const resetText = () => {
+    setText("hello");
+  };
 
-    return {
-        text,
-        updateText,
-        resetText
-    }
+  return {
+    text,
+    updateText,
+    resetText,
+  };
 }

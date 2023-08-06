@@ -1,14 +1,14 @@
 .image {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .button {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
 }
 
 .item {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
