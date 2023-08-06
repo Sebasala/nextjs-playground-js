@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Content = ({ pages }) => {
+export default function Content({ pages }) {
     return (
         <nav>
             <ul>
@@ -15,5 +15,3 @@ const Content = ({ pages }) => {
         </nav>
     )
 }
-
-export default Content;
