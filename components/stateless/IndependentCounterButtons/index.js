@@ -1,15 +1,14 @@
-import CounterButton from '../../stateful/CounterButton'
+import CounterButtonProvider from '../../stateful/CounterButtonProvider'
 
 export default function IndependentCounterButtons() {
     return (
-        <section>
-            <h2>Independent Counter Buttons</h2>
+        <div>
             <div>
-                <CounterButton />
+                <CounterButtonProvider />
             </div>
             <div>
-                <CounterButton />
+                <CounterButtonProvider />
             </div>
-        </section>
+        </div>
     )
 }

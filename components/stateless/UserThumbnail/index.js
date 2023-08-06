@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './userThumbnail.module.css'
 
-const UserThumbnail = ({ user }) => {
+export default function UserThumbnail({ user }) {
     return (
         <li className={styles.item}>
             <button className={styles.button}>
@@ -17,4 +17,3 @@ const UserThumbnail = ({ user }) => {
         </li>
     )
 }
-export default UserThumbnail

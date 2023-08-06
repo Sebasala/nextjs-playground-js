@@ -3,7 +3,7 @@ import fetchApi from '@/utils/fetchApi'
 
 const usersEndpoint = 'https://random-data-api.com/api/v2/users?size=5users'
 
-const useUsers = () => {
+export default function useUsers() {
     const [users, setUsers] = useState([])
 
     const fetchUsers = () => {
@@ -14,5 +14,3 @@ const useUsers = () => {
     
     return users
 }
-
-export default useUsers
