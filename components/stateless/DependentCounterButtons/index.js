@@ -1,4 +1,4 @@
-import CounterButtonsGroup from "../CounterButtonsGroup"
+import CounterButtonsGroup from "../../stateful/CounterButtonsGroup"
 
 export default function DependentCounterButtons() {
     return (
