@@ -1,6 +1,6 @@
 'use client'
 import { useReducer } from 'react';
-import AgeCounter from '../AgeCounter'
+import AgeCounter from '../../stateless/AgeCounter'
 
 const actions = {
     INCREMENT: 'INCREMENT',

@@ -1,5 +1,5 @@
 import { pages } from '@/constants'
-import Content from '@/components/Content'
+import Content from '@/components/stateless/Content'
 
 export default function Home() {
   return (

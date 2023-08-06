@@ -1,6 +1,6 @@
 'use client'
 import {useState} from 'react'
-import Button from '@/components/Button'
+import Button from '@/components/stateless/Button'
 
 export default function TextField() {
     const [text, setText] = useState('hello')

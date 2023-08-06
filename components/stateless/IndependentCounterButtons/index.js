@@ -1,4 +1,4 @@
-import CounterButton from '../CounterButton'
+import CounterButton from '../../stateful/CounterButton'
 
 export default function IndependentCounterButtons() {
     return (

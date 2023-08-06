@@ -1,7 +1,6 @@
 'use client'
+import UserThumbnail from '@/components/stateless/UserThumbnail'
 import useUsers from '@/hooks/useUsers'
-import Image from 'next/image'
-import UserThumbnail from '@/components/UserThumbnail'
 
 const Users = () => {
     const users = useUsers()

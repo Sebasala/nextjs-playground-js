@@ -1,8 +1,8 @@
-import CheckboxCombo from '@/components/CheckboxCombo'
-import DependentCounterButtons from '@/components/DependentCounterButtons'
-import IndependentCounterButtons from '@/components/IndependentCounterButtons'
-import ReducerCounterContainer from '@/components/ReducerCounterContainer'
-import TextField from '@/components/TextField'
+import CheckboxCombo from '@/components/stateful/CheckboxCombo'
+import DependentCounterButtons from '@/components/stateless/DependentCounterButtons'
+import IndependentCounterButtons from '@/components/stateless/IndependentCounterButtons'
+import ReducerCounterContainer from '@/components/stateful/ReducerCounterContainer'
+import TextField from '@/components/stateful/TextField'
 
 export const metadata = {
     title: 'React Hooks Examples',
