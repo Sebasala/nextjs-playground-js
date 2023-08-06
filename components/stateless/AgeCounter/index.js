@@ -1,11 +1,11 @@
-import Button from "@/components/stateless/Button"
+import Button from "@/components/stateless/Button";
 
 export default function AgeCounter({ age, incrementAge, decrementAge }) {
-    return (
-        <div>
-            <Button onClick={decrementAge} label='- Age' />
-            <Button onClick={incrementAge} label='+ Age' />
-            <p>Hello you are {age}</p>
-        </div>
-    )
+  return (
+    <div>
+      <Button onClick={decrementAge} label="- Age" />
+      <Button onClick={incrementAge} label="+ Age" />
+      <p>Hello you are {age}</p>
+    </div>
+  );
 }
