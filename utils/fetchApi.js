@@ -1,7 +1,7 @@
-const fetchApi = async (endpoint, setter) => {
+const fetchApi = async (endpoint) => {
   const response = await fetch(endpoint);
   const data = await response.json();
-  setter(data);
+  return data;
 };
 
 export default fetchApi;
