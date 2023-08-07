@@ -1,4 +1,4 @@
-import UsersThumbnailsProvider from "@/components/stateful/UsersThumbnailsProvider";
+import UsersProvider from "@/components/stateful/UsersProvider";
 
 export const metadata = {
   title: "Users",
@@ -9,7 +9,7 @@ const Users = () => {
   return (
     <main>
       <h1>Users</h1>
-      <UsersThumbnailsProvider />
+      <UsersProvider />
     </main>
   );
 };

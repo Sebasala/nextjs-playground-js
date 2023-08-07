@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./userThumbnail.module.css";
 
-export default function UserThumbnail({ user }) {
+export default function UserThumbnail({ user, onClick }) {
   return (
     <li className={styles.item}>
-      <button className={styles.button}>
+      <button className={styles.button} onClick={onClick}>
         <Image
           className={styles.image}
           src={user.avatar}
