@@ -1,7 +1,8 @@
+import { endpoints } from "@/constants";
 import fetchApi from "@/utils/fetchApi";
 import { useEffect, useReducer } from "react";
 
-const usersEndpoint = "https://random-data-api.com/api/v2/users?size=5users";
+const usersEndpoint = endpoints.users;
 
 const actions = {
   SET_USERS: "SET_USERS",

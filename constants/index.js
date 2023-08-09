@@ -9,4 +9,13 @@ export const pages = [
     name: "Users",
     path: "/users",
   },
+  {
+    id: 2,
+    name: "Users (SSR)",
+    path: "/users-ssr",
+  },
 ];
+
+export const endpoints = {
+  users: "https://random-data-api.com/api/v2/users?size=5users",
+};
