@@ -2,7 +2,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+input,
+textarea {
   margin: 0 0 1rem;
 }
 
@@ -16,7 +18,8 @@ ul {
   padding: 0;
 }
 
-button {
+button,
+input[type="submit"] {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -24,4 +27,9 @@ button {
 
 li {
   list-style: none;
+}
+
+input,
+textarea {
+  display: block;
 }

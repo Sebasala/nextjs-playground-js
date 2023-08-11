@@ -14,6 +14,11 @@ export const pages = [
     name: "Users (SSR)",
     path: "/users-ssr",
   },
+  {
+    id: 3,
+    name: "Accordion",
+    path: "/accordion",
+  },
 ];
 
 export const endpoints = {
