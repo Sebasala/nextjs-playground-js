@@ -1,15 +1,13 @@
 import { useEffect, useRef } from "react";
 
 export default function useContentInput(items, setItems) {
-  const titleRef = useRef(null);
-  const contentRef = useRef(null);
-  const submitRef = useRef(null);
+  const formRef = useRef({});
 
   useEffect(() => {
-    titleRef.current.value = "";
-    titleRef.current.focus();
-    contentRef.current.value = "";
-    submitRef.current.value = "Add item";
+    formRef.current.title.value = "";
+    formRef.current.title.focus();
+    formRef.current.content.value = "";
+    formRef.current.submit.value = "Add item";
   }, [items]);
 
   const addItem = (e) => {
@@ -27,5 +25,5 @@ export default function useContentInput(items, setItems) {
     });
   };
 
-  return { titleRef, contentRef, submitRef, addItem };
+  return { formRef, addItem };
 }
