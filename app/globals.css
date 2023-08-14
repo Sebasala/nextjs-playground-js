@@ -21,8 +21,8 @@ ul {
 button,
 input[type="submit"] {
   cursor: pointer;
-  border: 0;
-  padding: 0;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
 }
 
 li {
