@@ -1,12 +1,24 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import styles from "./accordion.module.css";
+import {
+  container,
+  contentInput,
+  form,
+  isClosed,
+  itemContent,
+  itemContentContainer,
+  itemTitle,
+  itemsContainer,
+  titleInput,
+  toggleButton,
+} from "./accordion.module.css";
 
 export default function Accordion() {
   const [items, setItems] = useState([]);
 
   const titleRef = useRef(null);
   const contentRef = useRef(null);
+  const submitRef = useRef(null);
 
   const toggle = (id) => {
     setItems((items) => {
@@ -34,30 +46,56 @@ export default function Accordion() {
     });
   };
 
+  const deleteItem = (id) => {
+    setItems((items) => {
+      return items.filter((item) => item.id !== id);
+    });
+  };
+
   useEffect(() => {
     titleRef.current.value = "";
     contentRef.current.value = "";
+    submitRef.current.value = "Add item";
   }, [items]);
 
   return (
-    <div>
-      <ul>
+    <div className={container}>
+      <ul className={itemsContainer}>
         {items.map((item) => {
           return (
             <li key={item.id}>
-              <button onClick={() => toggle(item.id)}>
-                <h2>{item.title}</h2>
-              </button>
-              <p className={!item.isOpen ? styles.isClosed : undefined}>
-                {item.content}
-              </p>
+              <h2 className={itemTitle}>
+                <button
+                  className={toggleButton}
+                  onClick={() => toggle(item.id)}
+                  type="button"
+                >
+                  {item.title}
+                </button>
+              </h2>
+              <div
+                className={`${
+                  !item.isOpen ? isClosed + " " : ""
+                }${itemContentContainer}`}
+              >
+                <p className={itemContent}>{item.content}</p>
+                <button type="button" onClick={() => deleteItem(item.id)}>
+                  Delete
+                </button>
+              </div>
             </li>
           );
         })}
       </ul>
-      <form onSubmit={addItem}>
-        <input ref={titleRef} type="text" placeholder="Title" />
+      <form className={form} onSubmit={addItem}>
+        <input
+          className={titleInput}
+          ref={titleRef}
+          type="text"
+          placeholder="Title"
+        />
         <textarea
+          className={contentInput}
           ref={contentRef}
           name=""
           id=""
@@ -65,7 +103,7 @@ export default function Accordion() {
           rows="10"
           placeholder="Content"
         ></textarea>
-        <input type="submit" defaultValue="Add item" />
+        <input ref={submitRef} type="submit" defaultValue="Add item" />
       </form>
     </div>
   );
