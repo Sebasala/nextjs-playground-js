@@ -1,23 +1,36 @@
+import { FaHome, FaReact, FaUsers, FaUsersCog } from "react-icons/fa";
+import { TfiLayoutAccordionSeparated } from "react-icons/tfi";
+
 export const pages = [
   {
     id: 0,
-    name: "Hooks examples",
-    path: "/hooks-examples",
+    text: "Home",
+    path: "/",
+    icon: <FaHome />,
   },
   {
     id: 1,
-    name: "Users",
-    path: "/users",
+    text: "Hooks examples",
+    path: "/hooks-examples",
+    icon: <FaReact />,
   },
   {
     id: 2,
-    name: "Users (SSR)",
-    path: "/users-ssr",
+    text: "Users",
+    path: "/users",
+    icon: <FaUsers />,
   },
   {
     id: 3,
-    name: "Accordion",
+    text: "Users (SSR)",
+    path: "/users-ssr",
+    icon: <FaUsersCog />,
+  },
+  {
+    id: 4,
+    text: "Accordion",
     path: "/accordion",
+    icon: <TfiLayoutAccordionSeparated />,
   },
 ];
 

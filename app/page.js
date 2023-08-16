@@ -1,11 +1,10 @@
-import { pages } from "@/constants";
-import Content from "@/components/stateless/Content";
-
 export default function Home() {
   return (
     <main>
       <h1>Next JS Playground with JS</h1>
-      <Content pages={pages} />
+      <p>
+        This is a space to play with react and next js and try different POCs
+      </p>
     </main>
   );
 }
