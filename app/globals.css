@@ -5,12 +5,12 @@ h5,
 h6,
 input,
 textarea {
-  margin: 0 0 1rem;
+  margin: 1rem 0;
 }
 
 h1,
 section {
-  margin: 0 0 2rem;
+  margin: 2rem 0;
 }
 
 ul {
@@ -32,4 +32,12 @@ li {
 input,
 textarea {
   display: block;
+}
+
+main {
+  padding: 0 0.5rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 1rem;
+  }
 }
