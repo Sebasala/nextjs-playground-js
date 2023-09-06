@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Menu pages={pages} />
+        <Menu links={pages} />
         {children}
       </body>
     </html>

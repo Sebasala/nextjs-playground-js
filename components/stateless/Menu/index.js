@@ -1,11 +1,22 @@
+import { layouts } from "@/constants";
+import getClassNames from "classnames";
 import { MenuItem } from "../MenuItem";
-import { menuItems } from "./styles.module.css";
+import { centered, menuItems, right } from "./styles.module.css";
 
-export default function Menu({ pages }) {
+const { LEFT } = layouts;
+
+export default function Menu({ links, layout = LEFT }) {
+  const { RIGHT, CENTERED } = layouts;
+  const isCentered = layout === CENTERED;
+  const isRight = layout === RIGHT;
+  const listClassNames = getClassNames(menuItems, {
+    [centered]: isCentered,
+    [right]: isRight,
+  });
   return (
     <nav>
-      <ul className={menuItems}>
-        {pages.map(({ id, icon, text, path }) => (
+      <ul className={listClassNames}>
+        {links.map(({ id, icon, text, path }) => (
           <MenuItem key={id} icon={icon} text={text} path={path} />
         ))}
       </ul>

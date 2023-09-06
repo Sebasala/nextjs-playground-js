@@ -1,25 +1,12 @@
-import { endpoints } from "@/constants";
-import fetchApi from "@/utils/fetchApi";
+import Menu from "@/components/stateless/Menu";
+import { layouts, movieGenres } from "@/constants";
 
-export default async function TmdbPage() {
-  const headers = {
-    Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_BEARER_TOKEN}`,
-  };
-  const data = await fetchApi(endpoints.tmdb, headers);
-  const movies = data.results;
-
+export default function TmdbPage() {
+  const { CENTERED } = layouts;
   return (
     <main>
-      <h1>TMDB</h1>
-      <ul>
-        {movies.map(({ id, title }) => {
-          return (
-            <li key={id}>
-              <h2>{title}</h2>
-            </li>
-          );
-        })}
-      </ul>
+      <h1>Movies</h1>
+      <Menu links={movieGenres} layout={CENTERED} />
     </main>
   );
 }

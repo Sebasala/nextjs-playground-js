@@ -2,7 +2,7 @@
   line-height: 0;
 }
 
-.textContainer {
+.hideOnMobile {
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -20,19 +20,21 @@
 
 .link {
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.2rem;
   display: block;
   color: darkcyan;
   cursor: pointer;
   font-size: 1.5rem;
-  border-radius: 2rem;
-
-  @media screen and (min-width: 768px) {
-    padding: 0.5rem 1rem;
-  }
+  border-radius: 50%;
+  border: 1px solid transparent;
 }
 
 .link:hover {
+  border: 1px solid darkcyan;
+}
+
+.currentStyles {
   color: white;
   background-color: darkcyan;
 }
